@@ -1,0 +1,12 @@
+a n hello
+c m 你好
+e l 吃饭了吗
+f v 哈
+a c 这样吗
+c b 好的
+e g 恩恩
+f f 没错
+a d 我也这么认为
+c b 还好吧
+e c 是的呢
+f a 难以置信

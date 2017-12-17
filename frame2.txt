@@ -1,0 +1,15 @@
+b b hello
+g d 你好
+d v 吃饭了吗
+t a 哈
+l b 这样吗
+b b 我不这么认为
+g a 你好呢
+d b 好孩子
+t c 你会吉他吗
+l d 不可能
+b e 是的是的
+g f 好吧
+d b 还行吧
+t gt 你多大
+l c 不好
