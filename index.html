@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网桥模拟程序</title>
+	<script type="text/javascript" src="./main.js"></script>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<table class="mytable">
+	<tbody>
+		<tr>
+			<td style="width: 45%">  <!--左侧链路-->
+					<div>
+						<p id="lmsg" style="text-align: center">尚无数据</p>
+					</div>
+					<div class="progress">
+						<p id="point1" style="float: left;">端口1</p>
+						<span id="l0"></span>
+						<span id="l1"></span>
+						<span id="l2"></span>
+						<span id="l3"></span>
+						<span id="l4"></span>
+						<span id="l5"></span>
+						<span id="l6"></span>
+					</div>
+			</td>
+			<td style="width: 128px">  <!--网桥-->
+				<img src="./bridge.png">
+			</td>
+			<td style="width: 45%">  <!--右侧链路-->
+				<div>
+					<p id="rmsg" style="text-align: center">尚无数据</p>
+				</div>
+				<div class="progress">
+					<p id="point2" style="float: right;">端口2</p>
+					<span id="r0"></span>
+					<span id="r1"></span>
+					<span id="r2"></span>
+					<span id="r3"></span>
+					<span id="r4"></span>
+					<span id="r5"></span>
+					<span id="r6"></span>
+				</div>
+			</td>
+		</tr>
+		<tr style="text-align: center;">
+			<td><button class="btn btn-primary mybtn">	
+				<input type="file"  onchange="handleFiles(this.files, 1)">加载端口一数据</input>
+			</button></td>
+			<td><button class="btn btn-primary" onclick="run()" style="">模拟运行</button>
+				<button class="btn btn-primary" onclick="stopIt()" style="">暂停/启动</button></td>
+			<td>
+				<button class="btn btn-primary mybtn">	
+				<input type="file"  onchange="handleFiles(this.files, 2)">加载端口二数据</input>
+			</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="msg">
+	<p id="toast" class="bg-info" style="height: 35px; width: 300px;  text-align: center; margin-right: auto; margin-left: auto">等待数据加载</p>
+</div>
+<div class="msg">
+	<div id="msgInfo1" class="msgInfo"></div>
+	<div id="msgInfo0" class="msgInfo"></div>
+	<div id="msgInfo2" class="msgInfo"></div>
+</div>
+
+</body>
+</html>

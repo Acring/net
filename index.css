@@ -1,0 +1,66 @@
+.mytable{
+	width:900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	padding: 25px;
+}
+.progress{
+	width: 100%;
+}
+.progress > p{
+	width: 12%;
+	font-size: small;
+}
+
+.progress > span{
+	position: relative;
+	float: left;
+	margin-top: 8px;
+	width: 12.5%;
+	height: 5px;
+	background-color: '#999999';
+	border-bottom: 5px solid;
+}
+.msg{
+	margin-top: 50px;
+	width:1200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center
+}
+
+.msg > p {
+	height: 40px;
+    width: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 6px;
+    padding: 10px;
+}
+.msgInfo{
+	width:370px;
+	margin-left: 30px;
+	float: left;
+}
+
+.mybtn > input{
+	width: 120px;
+	position: absolute;
+    font-size: 8px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.red{
+	border-bottom: 5px solid #bf1a12 !important;
+}
+
+.grey{
+    border-bottom: 5px solid #333 !important;}
+
+.green{
+    border-bottom: 5px solid #2fff1d !important;
+}
